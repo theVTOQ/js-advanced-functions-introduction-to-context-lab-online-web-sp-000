@@ -58,6 +58,7 @@ function allWagesFor(record){
   const allDates = record.timeInEvents.map(timeInEvent => timeInEvent.date);
   return allDates.reduce((total, date) => total + wagesEarnedOnDate(record, date), 0);
 }
+<<<<<<< HEAD
 
 function calculatePayroll(employees){
   return employees.reduce((total, employee) => total + allWagesFor(employee), 0);
@@ -67,3 +68,5 @@ function calculatePayroll(employees){
 function findEmployeeByFirstName(employees, firstName){
   return employees.find((employee) => employee.firstName == firstName);
 }
+=======
+>>>>>>> 5d562906dc7d2684d80fa6ebfa58ea798182ab27
